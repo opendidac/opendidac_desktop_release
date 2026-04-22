@@ -65,6 +65,30 @@ Since you will be using the desktop application, your browser's saved passwords 
 3. Run the application from your applications menu
 4. You can use the special link, in your browser, provided by your professor to access the evaluation
 
+#### Arch Installation:
+##### Prerequisite
+1. Debtap (find [here](https://aur.archlinux.org/packages/debtap))
+```bash
+# Install
+pacman -S debtap
+
+# Update the debtap database
+sudo debtap -u
+```
+2. gtk (dependancy for the app)
+3. The `.deb` release
+
+#### Converting the .deb and installing from Local
+1. Run the following command to convert the `.deb` archive
+```bash
+# When prompted you can leave things blank
+debtap opendidac-desktop_1.0.0_amd64.deb
+```
+2. Run the following command to install from local
+```bash
+pacman -U opendidac-desktop-1.0.0-1-x86_64.pkg.tar.zst
+```
+
 ---
 
 ## Support
